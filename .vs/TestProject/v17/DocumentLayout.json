@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\karls\\source\\repos\\TestProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FE897951-A5EF-45ED-B313-42B90E41A4BA}|TestProject\\TestProject.csproj|c:\\users\\karls\\source\\repos\\testproject\\testproject\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE897951-A5EF-45ED-B313-42B90E41A4BA}|TestProject\\TestProject.csproj|solutionrelative:testproject\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE897951-A5EF-45ED-B313-42B90E41A4BA}|TestProject\\TestProject.csproj|c:\\users\\karls\\source\\repos\\testproject\\testproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE897951-A5EF-45ED-B313-42B90E41A4BA}|TestProject\\TestProject.csproj|solutionrelative:testproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE897951-A5EF-45ED-B313-42B90E41A4BA}|TestProject\\TestProject.csproj|c:\\users\\karls\\source\\repos\\testproject\\testproject\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FE897951-A5EF-45ED-B313-42B90E41A4BA}|TestProject\\TestProject.csproj|solutionrelative:testproject\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE897951-A5EF-45ED-B313-42B90E41A4BA}|TestProject\\TestProject.csproj|c:\\users\\karls\\source\\repos\\testproject\\testproject\\repositories\\puppyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE897951-A5EF-45ED-B313-42B90E41A4BA}|TestProject\\TestProject.csproj|solutionrelative:testproject\\repositories\\puppyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE897951-A5EF-45ED-B313-42B90E41A4BA}|TestProject\\TestProject.csproj|c:\\users\\karls\\source\\repos\\testproject\\testproject\\services\\puppyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE897951-A5EF-45ED-B313-42B90E41A4BA}|TestProject\\TestProject.csproj|solutionrelative:testproject\\services\\puppyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE897951-A5EF-45ED-B313-42B90E41A4BA}|TestProject\\TestProject.csproj|c:\\users\\karls\\source\\repos\\testproject\\testproject\\controllers\\puppycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE897951-A5EF-45ED-B313-42B90E41A4BA}|TestProject\\TestProject.csproj|solutionrelative:testproject\\controllers\\puppycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE897951-A5EF-45ED-B313-42B90E41A4BA}|TestProject\\TestProject.csproj|c:\\users\\karls\\source\\repos\\testproject\\testproject\\models\\puppy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE897951-A5EF-45ED-B313-42B90E41A4BA}|TestProject\\TestProject.csproj|solutionrelative:testproject\\models\\puppy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\karls\\source\\repos\\TestProject\\TestProject\\Startup.cs",
+              "RelativeDocumentMoniker": "TestProject\\Startup.cs",
+              "ToolTip": "C:\\Users\\karls\\source\\repos\\TestProject\\TestProject\\Startup.cs",
+              "RelativeToolTip": "TestProject\\Startup.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA5wB8AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T04:18:11.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\karls\\source\\repos\\TestProject\\TestProject\\Program.cs",
+              "RelativeDocumentMoniker": "TestProject\\Program.cs",
+              "ToolTip": "C:\\Users\\karls\\source\\repos\\TestProject\\TestProject\\Program.cs",
+              "RelativeToolTip": "TestProject\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T04:03:41.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\karls\\source\\repos\\TestProject\\TestProject\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "TestProject\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\karls\\source\\repos\\TestProject\\TestProject\\appsettings.Development.json",
+              "RelativeToolTip": "TestProject\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-08T03:40:29.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PuppyRepository.cs",
+              "DocumentMoniker": "C:\\Users\\karls\\source\\repos\\TestProject\\TestProject\\Repositories\\PuppyRepository.cs",
+              "RelativeDocumentMoniker": "TestProject\\Repositories\\PuppyRepository.cs",
+              "ToolTip": "C:\\Users\\karls\\source\\repos\\TestProject\\TestProject\\Repositories\\PuppyRepository.cs",
+              "RelativeToolTip": "TestProject\\Repositories\\PuppyRepository.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAewBEAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T03:33:25.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PuppyService.cs",
+              "DocumentMoniker": "C:\\Users\\karls\\source\\repos\\TestProject\\TestProject\\Services\\PuppyService.cs",
+              "RelativeDocumentMoniker": "TestProject\\Services\\PuppyService.cs",
+              "ToolTip": "C:\\Users\\karls\\source\\repos\\TestProject\\TestProject\\Services\\PuppyService.cs",
+              "RelativeToolTip": "TestProject\\Services\\PuppyService.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAnwCkAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T03:25:15.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PuppyController.cs",
+              "DocumentMoniker": "C:\\Users\\karls\\source\\repos\\TestProject\\TestProject\\Controllers\\PuppyController.cs",
+              "RelativeDocumentMoniker": "TestProject\\Controllers\\PuppyController.cs",
+              "ToolTip": "C:\\Users\\karls\\source\\repos\\TestProject\\TestProject\\Controllers\\PuppyController.cs",
+              "RelativeToolTip": "TestProject\\Controllers\\PuppyController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAA9wC0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T03:24:08.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Puppy.cs",
+              "DocumentMoniker": "C:\\Users\\karls\\source\\repos\\TestProject\\TestProject\\Models\\Puppy.cs",
+              "RelativeDocumentMoniker": "TestProject\\Models\\Puppy.cs",
+              "ToolTip": "C:\\Users\\karls\\source\\repos\\TestProject\\TestProject\\Models\\Puppy.cs",
+              "RelativeToolTip": "TestProject\\Models\\Puppy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T03:23:32.873Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

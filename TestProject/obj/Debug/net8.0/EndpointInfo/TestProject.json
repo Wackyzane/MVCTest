@@ -1,0 +1,225 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "TestProject",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Puppy": {
+      "get": {
+        "tags": [
+          "Puppy"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Puppy"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Puppy"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Puppy"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Puppy/{puppyID}": {
+      "get": {
+        "tags": [
+          "Puppy"
+        ],
+        "parameters": [
+          {
+            "name": "puppyID",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Puppy"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Puppy"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Puppy"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Puppy/Create": {
+      "post": {
+        "tags": [
+          "Puppy"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Puppy"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Puppy"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Puppy"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Puppy/{newID}": {
+      "put": {
+        "tags": [
+          "Puppy"
+        ],
+        "parameters": [
+          {
+            "name": "newId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Puppy"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Puppy"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Puppy"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Puppy"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Puppy"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Puppy"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Puppy/{puppyId}": {
+      "delete": {
+        "tags": [
+          "Puppy"
+        ],
+        "parameters": [
+          {
+            "name": "puppyId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Puppy"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Puppy"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Puppy"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Puppy": {
+        "type": "object",
+        "additionalProperties": false
+      }
+    }
+  }
+}

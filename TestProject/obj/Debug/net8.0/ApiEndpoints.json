@@ -1,0 +1,121 @@
+[
+  {
+    "ContainingType": "TestProject.Controllers.PuppyController",
+    "Method": "GetAllPuppies",
+    "RelativePath": "api/Puppy",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[TestProject.Models.Puppy, TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TestProject.Controllers.PuppyController",
+    "Method": "EditPuppy",
+    "RelativePath": "api/Puppy/{newID}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "puppyToUpdate",
+        "Type": "TestProject.Models.Puppy",
+        "IsRequired": true
+      },
+      {
+        "Name": "newId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TestProject.Models.Puppy",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TestProject.Controllers.PuppyController",
+    "Method": "DeletePuppy",
+    "RelativePath": "api/Puppy/{puppyId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "puppyId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TestProject.Models.Puppy",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TestProject.Controllers.PuppyController",
+    "Method": "GetByID",
+    "RelativePath": "api/Puppy/{puppyID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "puppyID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TestProject.Models.Puppy",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TestProject.Controllers.PuppyController",
+    "Method": "CreatePuppy",
+    "RelativePath": "api/Puppy/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newPuppy",
+        "Type": "TestProject.Models.Puppy",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
