@@ -41,6 +41,57 @@
             }
           }
         }
+      },
+      "post": {
+        "tags": [
+          "Puppy"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Puppy"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Puppy"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Puppy"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Puppy"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Puppy"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Puppy"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Puppy"
+                }
+              }
+            }
+          }
+        }
       }
     },
     "/api/Puppy/{puppyID}": {
@@ -83,37 +134,6 @@
         }
       }
     },
-    "/api/Puppy/Create": {
-      "post": {
-        "tags": [
-          "Puppy"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Puppy"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Puppy"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Puppy"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
     "/api/Puppy/{newID}": {
       "put": {
         "tags": [
@@ -132,6 +152,11 @@
         ],
         "requestBody": {
           "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Puppy"
+              }
+            },
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/Puppy"

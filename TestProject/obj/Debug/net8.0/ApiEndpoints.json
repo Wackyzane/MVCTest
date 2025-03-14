@@ -21,6 +21,32 @@
   },
   {
     "ContainingType": "TestProject.Controllers.PuppyController",
+    "Method": "CreatePuppy",
+    "RelativePath": "api/Puppy",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newPuppy",
+        "Type": "TestProject.Models.Puppy",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TestProject.Models.Puppy",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TestProject.Controllers.PuppyController",
     "Method": "EditPuppy",
     "RelativePath": "api/Puppy/{newID}",
     "HttpMethod": "PUT",
@@ -101,21 +127,5 @@
         "StatusCode": 200
       }
     ]
-  },
-  {
-    "ContainingType": "TestProject.Controllers.PuppyController",
-    "Method": "CreatePuppy",
-    "RelativePath": "api/Puppy/Create",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "newPuppy",
-        "Type": "TestProject.Models.Puppy",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
   }
 ]

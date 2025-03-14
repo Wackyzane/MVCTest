@@ -43,11 +43,10 @@ namespace TestProject.Controllers
         }
 
         [HttpPost]
-        public ActionResult<Puppy> CreatePuppy([FromBody] Puppy newPuppy)
+        public ActionResult<Puppy> CreatePuppy(Puppy newPuppy)
         {
             try
             {
-                System.Diagnostics.Debug.WriteLine(newPuppy.puppyid + " : " + newPuppy.name + " : " + newPuppy.gender);
                 return Ok(_ps.CreatePuppy(newPuppy));
             }
             catch (Exception ex)

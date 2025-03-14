@@ -26,20 +26,9 @@ namespace TestProject
                 cors.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
             });
 
-            services.AddControllers().AddJsonOptions(options =>
-            {
-                options.JsonSerializerOptions.PropertyNameCaseInsensitive = true;
-            });
-
-            services.AddControllersWithViews()
-            .AddJsonOptions(options =>
-            {
-                // To handle reference loops, use `JsonSerializerOptions`
-                options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
-
-                // Customize the property naming policy, for example, use camel case
-                options.JsonSerializerOptions.PropertyNamingPolicy = System.Text.Json.JsonNamingPolicy.CamelCase;
-            });
+            services.AddControllersWithViews().AddNewtonsoftJson(options =>
+            options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore)
+                .AddNewtonsoftJson(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
 
             services.AddControllers();
             services.AddScoped<IDbConnection>(x => CreateDbConnection());
@@ -53,26 +42,12 @@ namespace TestProject
         private IDbConnection CreateDbConnection()
         {
             string connectionString = Configuration["db:ConnectionStrings:PgDbConnection"];
-
-            //using (NpgsqlConnection conn = new NpgsqlConnection(connectionString))
-            //{
-            //    conn.Open();
-            //    Console.WriteLine("Connected to PostgreSQL database!");
-
-            //    // Example query execution
-            //    using (var cmd = new NpgsqlCommand("SELECT version();", conn))
-            //    {
-            //        string version = (string)cmd.ExecuteScalar();
-            //        Console.WriteLine($"PostgreSQL Version: {version}");
-            //    }
-            //    return conn;
-            //}
             return new NpgsqlConnection(connectionString);
-            //return new MSqlConnection(connectionString);
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+
             app.UseCors(options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 
             if (env.IsDevelopment())

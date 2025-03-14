@@ -39,7 +39,7 @@ namespace TestProject.Services
 
         internal Puppy EditPuppy(Puppy puppyToUpdate, int newID)
         {
-            Puppy foundPuppy = GetById(puppyToUpdate.puppyid);
+            Puppy foundPuppy = GetById(newID);
 
             _repo.EditPuppy(puppyToUpdate, newID);
 

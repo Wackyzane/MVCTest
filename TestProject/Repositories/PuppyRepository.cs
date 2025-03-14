@@ -33,20 +33,20 @@ namespace TestProject.Repositories
             return newPuppy;
         }
 
-        internal Puppy EditPuppy(Puppy puppyToUpdate, int puppyID)
+        internal Puppy EditPuppy(Puppy puppyToUpdate, int puppyid)
         {
-            puppyToUpdate.puppyid = puppyID;
+            puppyToUpdate.puppyid = puppyid;
+            var parameters = new { name = puppyToUpdate.name, gender = puppyToUpdate.gender, puppyid = puppyToUpdate.puppyid };
 
-            string sql = "UPDATE puppies SET name = @name, gender = @gender WHERE puppyID = @puppyID";
-            puppyToUpdate.puppyid = _db.Execute(sql, puppyToUpdate);
+            string sql = "UPDATE puppies SET name = @name, gender = @gender WHERE puppyid = @puppyid";
+            puppyToUpdate.puppyid = _db.Execute(sql, parameters);
             return puppyToUpdate;
         }
-        internal string DeletePuppy(int puppyID)
+        internal string DeletePuppy(int puppyid)
         {
-            string sql = "DELETE FROM puppies WHERE puppyID = @puppyID LIMIT 1";
-            _db.Execute(sql, new { puppyID });
+            string sql = "DELETE FROM puppies WHERE puppyid = @puppyid";
+            _db.Execute(sql, new { puppyid });
             return "Successfully Deleted Puppy";
-
         }
     }
 }
